@@ -1030,3 +1030,7 @@ Daily activity and development milestones tracking.
 - **Activity**: refactor: optimize database query helper
 - **Checkpoint**: `927276`
 
+### Milestone: 2025-09-01 10:49:18
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-249502`
+
