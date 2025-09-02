@@ -1046,3 +1046,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
 - **Ref**: `chk-436563`
 
+### Milestone: 2025-09-02 19:16:50
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-211848`
+
