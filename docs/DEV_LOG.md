@@ -1054,3 +1054,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(state): modularize regional language localization state provider`
 - **Ref**: `chk-350747`
 
+### Milestone: 2025-09-04 17:23:44
+- **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
+- **Ref**: `chk-672930`
+
