@@ -1058,3 +1058,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
 - **Ref**: `chk-672930`
 
+### Milestone: 2025-09-05 10:33:07
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-826270`
+
