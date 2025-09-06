@@ -2182,3 +2182,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `perf(cache): add stale-while-revalidate strategy for scheme lists`
 - **Ref**: `sync-991512`
 
+### Sprint Update: 2025-09-06 18:57:15
+- **Scope**: `perf(cache): add stale-while-revalidate strategy for scheme lists`
+- **Ref**: `sync-171161`
+
