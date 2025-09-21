@@ -1122,3 +1122,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
 - **Ref**: `chk-421948`
 
+### Milestone: 2025-09-21 15:52:30
+- **Scope**: `refactor(state): modularize regional language localization state provider`
+- **Ref**: `chk-843870`
+
