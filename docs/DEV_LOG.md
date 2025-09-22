@@ -1126,3 +1126,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(state): modularize regional language localization state provider`
 - **Ref**: `chk-843870`
 
+### Milestone: 2025-09-22 10:46:38
+- **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
+- **Ref**: `chk-464473`
+
