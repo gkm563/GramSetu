@@ -1146,3 +1146,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(state): modularize regional language localization state provider`
 - **Ref**: `chk-951992`
 
+### Milestone: 2025-09-25 13:32:45
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-394462`
+
