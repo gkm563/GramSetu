@@ -1178,3 +1178,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
 - **Ref**: `chk-744293`
 
+### Milestone: 2025-10-03 20:12:37
+- **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
+- **Ref**: `chk-367432`
+
