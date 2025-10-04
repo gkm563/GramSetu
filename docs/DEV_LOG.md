@@ -1190,3 +1190,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-535788`
 
+### Milestone: 2025-10-04 10:52:07
+- **Scope**: `chore(deps): update UI component library and security dependencies`
+- **Ref**: `chk-119568`
+
