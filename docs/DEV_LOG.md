@@ -1194,3 +1194,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `chore(deps): update UI component library and security dependencies`
 - **Ref**: `chk-119568`
 
+### Milestone: 2025-10-04 15:45:54
+- **Scope**: `refactor(state): modularize regional language localization state provider`
+- **Ref**: `chk-298752`
+
