@@ -1202,3 +1202,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `chore(deps): update UI component library and security dependencies`
 - **Ref**: `chk-755496`
 
+### Milestone: 2025-10-07 10:52:41
+- **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
+- **Ref**: `chk-765644`
+
