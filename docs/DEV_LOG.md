@@ -2310,3 +2310,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `perf(cache): add stale-while-revalidate strategy for scheme lists`
 - **Ref**: `sync-124441`
 
+### Sprint Update: 2025-10-07 17:42:25
+- **Scope**: `fix(ui): resolve layout shift on multilingual dropdown change`
+- **Ref**: `sync-682947`
+
