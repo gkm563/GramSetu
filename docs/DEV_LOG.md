@@ -2318,3 +2318,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `perf(cache): add stale-while-revalidate strategy for scheme lists`
 - **Ref**: `sync-878244`
 
+### Sprint Update: 2025-10-09 12:19:59
+- **Scope**: `refactor(auth): refine role checks for district nodal officers`
+- **Ref**: `sync-885422`
+
