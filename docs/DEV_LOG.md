@@ -1214,3 +1214,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(offline): add service worker caching for offline form drafts`
 - **Ref**: `chk-534290`
 
+### Milestone: 2025-10-09 22:28:42
+- **Scope**: `refactor(state): modularize regional language localization state provider`
+- **Ref**: `chk-111889`
+
