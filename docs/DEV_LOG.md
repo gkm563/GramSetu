@@ -1210,3 +1210,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-725698`
 
+### Milestone: 2025-10-09 19:00:37
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-534290`
+
