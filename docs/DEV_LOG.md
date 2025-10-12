@@ -1222,3 +1222,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(state): modularize regional language localization state provider`
 - **Ref**: `chk-922678`
 
+### Milestone: 2025-10-12 21:02:22
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-501044`
+
