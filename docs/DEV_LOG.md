@@ -1246,3 +1246,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
 - **Ref**: `chk-898494`
 
+### Milestone: 2025-10-15 21:39:46
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-152886`
+
