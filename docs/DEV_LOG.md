@@ -1270,3 +1270,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `perf(media): add client-side image compression prior to document upload`
 - **Ref**: `chk-959391`
 
+### Milestone: 2025-10-19 09:24:34
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-376705`
+
