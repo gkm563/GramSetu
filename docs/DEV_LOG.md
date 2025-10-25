@@ -1322,3 +1322,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance contrast ratios and accessibility compliance for rural users`
 - **Ref**: `chk-161104`
 
+### Milestone: 2025-10-25 21:11:52
+- **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
+- **Ref**: `chk-111894`
+
