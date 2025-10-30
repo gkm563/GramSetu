@@ -1346,3 +1346,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-568339`
 
+### Milestone: 2025-10-30 20:50:24
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-801278`
+
