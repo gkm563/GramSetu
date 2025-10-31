@@ -1354,3 +1354,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance contrast ratios and accessibility compliance for rural users`
 - **Ref**: `chk-302872`
 
+### Milestone: 2025-10-31 12:57:10
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-813234`
+
