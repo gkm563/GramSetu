@@ -1362,3 +1362,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
 - **Ref**: `chk-605097`
 
+### Milestone: 2025-11-02 16:21:08
+- **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
+- **Ref**: `chk-920203`
+
