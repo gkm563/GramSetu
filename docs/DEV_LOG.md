@@ -1394,3 +1394,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance contrast ratios and accessibility compliance for rural users`
 - **Ref**: `chk-420622`
 
+### Milestone: 2025-11-13 18:39:12
+- **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
+- **Ref**: `chk-964970`
+
