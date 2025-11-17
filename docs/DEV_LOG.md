@@ -1414,3 +1414,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-574176`
 
+### Milestone: 2025-11-17 11:04:57
+- **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
+- **Ref**: `chk-186376`
+
