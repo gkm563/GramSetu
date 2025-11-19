@@ -2558,3 +2558,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(grievance): optimize status tracking workflow for citizens`
 - **Ref**: `sync-889995`
 
+### Sprint Update: 2025-11-19 18:19:01
+- **Scope**: `perf(cache): add stale-while-revalidate strategy for scheme lists`
+- **Ref**: `sync-862697`
+
