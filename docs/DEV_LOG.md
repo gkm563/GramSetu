@@ -2578,3 +2578,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(ui): resolve layout shift on multilingual dropdown change`
 - **Ref**: `sync-911793`
 
+### Sprint Update: 2025-11-21 18:26:13
+- **Scope**: `test(form): verify input constraints on offline sync queue`
+- **Ref**: `sync-729582`
+
