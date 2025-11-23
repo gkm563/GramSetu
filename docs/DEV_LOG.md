@@ -1450,3 +1450,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `chore(deps): update UI component library and security dependencies`
 - **Ref**: `chk-635312`
 
+### Milestone: 2025-11-23 13:46:28
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-412746`
+
