@@ -1474,3 +1474,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
 - **Ref**: `chk-629733`
 
+### Milestone: 2025-11-25 19:23:25
+- **Scope**: `refactor(state): modularize regional language localization state provider`
+- **Ref**: `chk-812151`
+
