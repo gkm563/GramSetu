@@ -1490,3 +1490,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
 - **Ref**: `chk-187532`
 
+### Milestone: 2025-11-28 21:39:12
+- **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
+- **Ref**: `chk-612881`
+
