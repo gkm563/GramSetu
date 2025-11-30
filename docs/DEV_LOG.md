@@ -2610,3 +2610,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(guide): update local language translation reference`
 - **Ref**: `sync-137256`
 
+### Sprint Update: 2025-11-30 16:52:17
+- **Scope**: `test(form): verify input constraints on offline sync queue`
+- **Ref**: `sync-674065`
+
