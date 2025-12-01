@@ -2618,3 +2618,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(form): verify input constraints on offline sync queue`
 - **Ref**: `sync-336208`
 
+### Sprint Update: 2025-12-01 10:22:57
+- **Scope**: `feat(grievance): optimize status tracking workflow for citizens`
+- **Ref**: `sync-464895`
+
