@@ -2638,3 +2638,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(form): verify input constraints on offline sync queue`
 - **Ref**: `sync-886327`
 
+### Sprint Update: 2025-12-02 19:03:35
+- **Scope**: `perf(cache): add stale-while-revalidate strategy for scheme lists`
+- **Ref**: `sync-418333`
+
