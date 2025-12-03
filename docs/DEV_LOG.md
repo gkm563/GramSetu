@@ -1502,3 +1502,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
 - **Ref**: `chk-996254`
 
+### Milestone: 2025-12-03 20:48:06
+- **Scope**: `refactor(state): modularize regional language localization state provider`
+- **Ref**: `chk-271025`
+
