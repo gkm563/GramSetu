@@ -1538,3 +1538,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance contrast ratios and accessibility compliance for rural users`
 - **Ref**: `chk-842850`
 
+### Milestone: 2025-12-08 16:08:05
+- **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
+- **Ref**: `chk-470090`
+
