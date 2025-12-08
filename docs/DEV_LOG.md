@@ -1530,3 +1530,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-298182`
 
+### Milestone: 2025-12-08 12:05:36
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-513740`
+
