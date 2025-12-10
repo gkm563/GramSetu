@@ -1542,3 +1542,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-470090`
 
+### Milestone: 2025-12-10 10:55:29
+- **Scope**: `refactor(state): modularize regional language localization state provider`
+- **Ref**: `chk-259565`
+
