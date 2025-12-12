@@ -1558,3 +1558,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
 - **Ref**: `chk-355022`
 
+### Milestone: 2025-12-12 12:54:25
+- **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
+- **Ref**: `chk-238060`
+
