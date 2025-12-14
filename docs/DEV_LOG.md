@@ -1570,3 +1570,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance contrast ratios and accessibility compliance for rural users`
 - **Ref**: `chk-894580`
 
+### Milestone: 2025-12-14 09:56:07
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-875148`
+
