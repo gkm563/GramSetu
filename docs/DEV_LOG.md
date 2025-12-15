@@ -1582,3 +1582,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `perf(media): add client-side image compression prior to document upload`
 - **Ref**: `chk-549530`
 
+### Milestone: 2025-12-15 10:02:25
+- **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
+- **Ref**: `chk-538566`
+
