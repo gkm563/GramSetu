@@ -1602,3 +1602,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
 - **Ref**: `chk-596695`
 
+### Milestone: 2025-12-18 16:05:55
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-411178`
+
