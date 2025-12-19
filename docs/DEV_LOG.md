@@ -1610,3 +1610,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(portal): add localized citizen grievance registration workflow`
 - **Ref**: `chk-525263`
 
+### Milestone: 2025-12-19 10:10:24
+- **Scope**: `chore(deps): update UI component library and security dependencies`
+- **Ref**: `chk-806359`
+
