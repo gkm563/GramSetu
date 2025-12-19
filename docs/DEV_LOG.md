@@ -1614,3 +1614,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `chore(deps): update UI component library and security dependencies`
 - **Ref**: `chk-806359`
 
+### Milestone: 2025-12-19 12:35:44
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-544979`
+
