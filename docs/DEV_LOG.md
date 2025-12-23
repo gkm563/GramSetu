@@ -1642,3 +1642,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
 - **Ref**: `chk-435890`
 
+### Milestone: 2025-12-23 16:56:04
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-754953`
+
