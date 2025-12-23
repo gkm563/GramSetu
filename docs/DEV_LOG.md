@@ -1646,3 +1646,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(offline): add service worker caching for offline form drafts`
 - **Ref**: `chk-754953`
 
+### Milestone: 2025-12-23 21:30:18
+- **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
+- **Ref**: `chk-984063`
+
