@@ -1650,3 +1650,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-984063`
 
+### Milestone: 2025-12-24 17:43:47
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-920466`
+
