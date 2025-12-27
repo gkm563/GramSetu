@@ -1674,3 +1674,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(portal): add localized citizen grievance registration workflow`
 - **Ref**: `chk-183321`
 
+### Milestone: 2025-12-27 20:25:39
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-947718`
+
