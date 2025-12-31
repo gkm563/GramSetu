@@ -1686,3 +1686,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
 - **Ref**: `chk-415476`
 
+### Milestone: 2025-12-31 19:40:58
+- **Scope**: `perf(media): add client-side image compression prior to document upload`
+- **Ref**: `chk-359009`
+
