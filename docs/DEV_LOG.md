@@ -1746,3 +1746,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-360032`
 
+### Milestone: 2026-01-08 17:03:13
+- **Scope**: `chore(deps): update UI component library and security dependencies`
+- **Ref**: `chk-412751`
+
