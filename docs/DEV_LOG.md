@@ -2854,3 +2854,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(form): verify input constraints on offline sync queue`
 - **Ref**: `sync-843020`
 
+### Sprint Update: 2026-01-14 12:19:28
+- **Scope**: `refactor(auth): refine role checks for district nodal officers`
+- **Ref**: `sync-637576`
+
