@@ -1754,3 +1754,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(offline): add service worker caching for offline form drafts`
 - **Ref**: `chk-322687`
 
+### Milestone: 2026-01-16 23:09:51
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-439465`
+
