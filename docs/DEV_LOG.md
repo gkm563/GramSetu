@@ -1762,3 +1762,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
 - **Ref**: `chk-270250`
 
+### Milestone: 2026-01-18 18:48:05
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-152132`
+
