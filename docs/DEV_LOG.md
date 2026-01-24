@@ -1794,3 +1794,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
 - **Ref**: `chk-219916`
 
+### Milestone: 2026-01-24 22:51:12
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-860439`
+
