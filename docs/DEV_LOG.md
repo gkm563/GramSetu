@@ -1830,3 +1830,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(offline): add service worker caching for offline form drafts`
 - **Ref**: `chk-455093`
 
+### Milestone: 2026-02-01 10:07:26
+- **Scope**: `feat(offline): add service worker caching for offline form drafts`
+- **Ref**: `chk-931052`
+
