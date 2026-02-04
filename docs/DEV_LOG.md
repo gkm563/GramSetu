@@ -1846,3 +1846,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-539419`
 
+### Milestone: 2026-02-04 14:07:06
+- **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
+- **Ref**: `chk-993078`
+
