@@ -1858,3 +1858,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-617999`
 
+### Milestone: 2026-02-05 18:48:40
+- **Scope**: `style(theme): enhance contrast ratios and accessibility compliance for rural users`
+- **Ref**: `chk-957068`
+
