@@ -2974,3 +2974,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(grievance): optimize status tracking workflow for citizens`
 - **Ref**: `sync-410107`
 
+### Sprint Update: 2026-02-06 10:31:14
+- **Scope**: `refactor(auth): refine role checks for district nodal officers`
+- **Ref**: `sync-554069`
+
