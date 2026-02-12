@@ -1898,3 +1898,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-894351`
 
+### Milestone: 2026-02-12 21:50:47
+- **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
+- **Ref**: `chk-219763`
+
