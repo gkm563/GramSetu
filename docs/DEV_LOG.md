@@ -1910,3 +1910,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
 - **Ref**: `chk-103024`
 
+### Milestone: 2026-02-15 16:43:20
+- **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
+- **Ref**: `chk-273947`
+
