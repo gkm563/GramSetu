@@ -1918,3 +1918,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `chore(deps): update UI component library and security dependencies`
 - **Ref**: `chk-443333`
 
+### Milestone: 2026-02-17 13:31:30
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-179549`
+
