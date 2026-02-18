@@ -1930,3 +1930,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
 - **Ref**: `chk-669854`
 
+### Milestone: 2026-02-18 22:44:33
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-177271`
+
