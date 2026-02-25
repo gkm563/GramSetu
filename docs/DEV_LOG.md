@@ -3030,3 +3030,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance button touch targets for mobile viewports`
 - **Ref**: `sync-614855`
 
+### Sprint Update: 2026-02-25 18:37:52
+- **Scope**: `test(form): verify input constraints on offline sync queue`
+- **Ref**: `sync-347021`
+
