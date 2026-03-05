@@ -2006,3 +2006,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(portal): add localized citizen grievance registration workflow`
 - **Ref**: `chk-156672`
 
+### Milestone: 2026-03-05 09:30:44
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-551298`
+
