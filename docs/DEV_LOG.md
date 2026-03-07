@@ -2022,3 +2022,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(portal): add localized citizen grievance registration workflow`
 - **Ref**: `chk-915855`
 
+### Milestone: 2026-03-07 17:18:08
+- **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
+- **Ref**: `chk-265227`
+
