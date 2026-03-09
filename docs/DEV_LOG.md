@@ -2042,3 +2042,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(portal): add localized citizen grievance registration workflow`
 - **Ref**: `chk-713873`
 
+### Milestone: 2026-03-09 17:52:23
+- **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
+- **Ref**: `chk-264352`
+
