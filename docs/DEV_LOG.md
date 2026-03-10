@@ -2046,3 +2046,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(session): resolve token refresh loop on slow 2G network connections`
 - **Ref**: `chk-264352`
 
+### Milestone: 2026-03-10 09:23:39
+- **Scope**: `docs(handbook): document village panchayat administrative onboarding workflow`
+- **Ref**: `chk-779370`
+
