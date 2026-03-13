@@ -2070,3 +2070,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-110359`
 
+### Milestone: 2026-03-13 13:45:11
+- **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
+- **Ref**: `chk-956271`
+
