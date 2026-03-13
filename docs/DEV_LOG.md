@@ -2078,3 +2078,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(state): modularize regional language localization state provider`
 - **Ref**: `chk-774034`
 
+### Milestone: 2026-03-13 17:49:00
+- **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
+- **Ref**: `chk-101480`
+
