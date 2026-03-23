@@ -2110,3 +2110,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(portal): add localized citizen grievance registration workflow`
 - **Ref**: `chk-759991`
 
+### Milestone: 2026-03-23 12:28:09
+- **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
+- **Ref**: `chk-113319`
+
