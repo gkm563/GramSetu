@@ -2106,3 +2106,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(validation): correct aadhaar and mobile number input sanitization logic`
 - **Ref**: `chk-798174`
 
+### Milestone: 2026-03-23 11:19:03
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-759991`
+
