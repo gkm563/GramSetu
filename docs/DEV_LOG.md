@@ -2114,3 +2114,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(deployment): update Kubernetes manifests and ingress routing rules`
 - **Ref**: `chk-113319`
 
+### Milestone: 2026-03-26 10:29:21
+- **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
+- **Ref**: `chk-261130`
+
