@@ -2118,3 +2118,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-261130`
 
+### Milestone: 2026-03-28 11:08:13
+- **Scope**: `refactor(api): consolidate beneficiary search and filtering query endpoints`
+- **Ref**: `chk-420813`
+
