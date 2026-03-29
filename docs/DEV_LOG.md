@@ -2126,3 +2126,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `chore(deps): update UI component library and security dependencies`
 - **Ref**: `chk-790842`
 
+### Milestone: 2026-03-29 19:08:10
+- **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
+- **Ref**: `chk-717427`
+
