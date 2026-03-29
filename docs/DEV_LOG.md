@@ -2130,3 +2130,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(e2e): verify end-to-end scheme application submission flow`
 - **Ref**: `chk-717427`
 
+### Milestone: 2026-03-29 19:28:36
+- **Scope**: `feat(portal): add localized citizen grievance registration workflow`
+- **Ref**: `chk-248043`
+
