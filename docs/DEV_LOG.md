@@ -26,3 +26,7 @@ Daily activity and development milestones tracking.
 - **Activity**: docs: update rural portal onboarding documentation
 - **Checkpoint**: `111404`
 
+### Entry: 2026-04-07 18:35:39
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `987725`
+
