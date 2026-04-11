@@ -58,3 +58,7 @@ Daily activity and development milestones tracking.
 - **Activity**: refactor: optimize database query helper
 - **Checkpoint**: `126725`
 
+### Entry: 2026-04-11 12:18:53
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `734941`
+
