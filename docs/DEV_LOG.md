@@ -3242,3 +3242,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `feat(grievance): optimize status tracking workflow for citizens`
 - **Ref**: `sync-477444`
 
+### Sprint Update: 2026-04-19 20:46:47
+- **Scope**: `docs(guide): update local language translation reference`
+- **Ref**: `sync-113715`
+
