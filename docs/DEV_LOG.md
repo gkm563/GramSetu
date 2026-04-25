@@ -3298,3 +3298,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(ui): resolve layout shift on multilingual dropdown change`
 - **Ref**: `sync-726171`
 
+### Sprint Update: 2026-04-25 14:08:18
+- **Scope**: `docs(guide): update local language translation reference`
+- **Ref**: `sync-599986`
+
