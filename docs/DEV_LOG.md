@@ -226,3 +226,7 @@ Daily activity and development milestones tracking.
 - **Activity**: feat(ui): refine dashboard layout components
 - **Checkpoint**: `805931`
 
+### Entry: 2026-05-12 19:42:57
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `804155`
+
