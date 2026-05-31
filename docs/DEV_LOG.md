@@ -334,3 +334,7 @@ Daily activity and development milestones tracking.
 - **Activity**: refactor: optimize database query helper
 - **Checkpoint**: `943947`
 
+### Entry: 2026-05-31 10:56:56
+- **Activity**: docs: update rural portal onboarding documentation
+- **Checkpoint**: `988963`
+
