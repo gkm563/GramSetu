@@ -3474,3 +3474,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `refactor(auth): refine role checks for district nodal officers`
 - **Ref**: `sync-341065`
 
+### Sprint Update: 2026-05-31 23:25:02
+- **Scope**: `docs(guide): update local language translation reference`
+- **Ref**: `sync-383101`
+
