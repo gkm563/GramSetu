@@ -494,3 +494,7 @@ Daily activity and development milestones tracking.
 - **Activity**: chore: clean temporary cache routines
 - **Checkpoint**: `482662`
 
+### Entry: 2026-06-23 21:42:41
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `249507`
+
