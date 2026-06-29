@@ -3638,3 +3638,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance button touch targets for mobile viewports`
 - **Ref**: `sync-156862`
 
+### Sprint Update: 2026-06-29 10:26:57
+- **Scope**: `docs(guide): update local language translation reference`
+- **Ref**: `sync-115075`
+
