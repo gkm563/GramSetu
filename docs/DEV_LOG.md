@@ -3642,3 +3642,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `docs(guide): update local language translation reference`
 - **Ref**: `sync-115075`
 
+### Sprint Update: 2026-07-02 10:21:14
+- **Scope**: `docs(guide): update local language translation reference`
+- **Ref**: `sync-336455`
+
