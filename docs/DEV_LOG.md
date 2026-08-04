@@ -3802,3 +3802,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `style(theme): enhance button touch targets for mobile viewports`
 - **Ref**: `sync-454667`
 
+### Sprint Update: 2026-08-04 13:26:23
+- **Scope**: `fix(ui): resolve layout shift on multilingual dropdown change`
+- **Ref**: `sync-397874`
+
