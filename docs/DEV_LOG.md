@@ -782,3 +782,7 @@ Daily activity and development milestones tracking.
 - **Activity**: perf: enhance asset loading and caching headers
 - **Checkpoint**: `181402`
 
+### Entry: 2026-08-05 09:54:46
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `284997`
+
