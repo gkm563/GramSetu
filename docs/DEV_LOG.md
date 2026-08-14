@@ -834,3 +834,7 @@ Daily activity and development milestones tracking.
 - **Activity**: fix: handle null edge cases in user profile view
 - **Checkpoint**: `194006`
 
+### Entry: 2026-08-14 20:09:22
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `737053`
+
