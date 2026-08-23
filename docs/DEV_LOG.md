@@ -3894,3 +3894,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `test(form): verify input constraints on offline sync queue`
 - **Ref**: `sync-292785`
 
+### Sprint Update: 2026-08-23 22:03:10
+- **Scope**: `test(form): verify input constraints on offline sync queue`
+- **Ref**: `sync-320808`
+
