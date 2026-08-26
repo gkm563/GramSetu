@@ -42,19 +42,19 @@ export const OverviewPage: React.FC = () => {
   const recentComplaints = complaints.slice(0, 5);
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="space-y-8 animate-fade-in pb-12">
       {/* Page Header with Jurisdiction Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-800">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl font-extrabold tracking-tight text-white">
+            <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               Executive Command Center
             </h1>
-            <span className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-[11px] font-semibold text-emerald-400 font-mono">
+            <span className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/80 border border-emerald-300 dark:border-emerald-800 text-[11px] font-bold text-emerald-800 dark:text-emerald-400 font-mono">
               <Radio className="w-3 h-3 animate-pulse" /> LIVE
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
             Realtime Civic Operations, Grievance Triaging & Field SLA Monitoring • Rampur Panchayat Block
           </p>
         </div>
@@ -62,14 +62,14 @@ export const OverviewPage: React.FC = () => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => navigate('/map')}
-            className="flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider text-emerald-300 bg-emerald-950/60 border border-emerald-800/80 rounded-xl hover:bg-emerald-900 transition-colors shadow-sm"
+            className="flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800/80 rounded-xl hover:bg-emerald-200 dark:hover:bg-emerald-900 transition-colors shadow-sm"
           >
             <MapPin className="w-3.5 h-3.5" />
             <span>Open GIS Map</span>
           </button>
           <button
             onClick={() => navigate('/complaints')}
-            className="flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-civic-600 hover:bg-civic-500 rounded-xl transition-colors shadow-lg shadow-civic-950"
+            className="flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-civic-700 dark:bg-civic-600 hover:bg-civic-600 dark:hover:bg-civic-500 rounded-xl transition-colors shadow-md"
           >
             <span>All Grievances ({stats.total})</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -79,23 +79,23 @@ export const OverviewPage: React.FC = () => {
 
       {/* Critical Alert Warning Banner if Urgent cases exist */}
       {criticalCases.length > 0 && (
-        <div className="p-4 rounded-xl bg-gradient-to-r from-rose-950/80 to-slate-900 border border-rose-800/60 flex items-center justify-between flex-wrap gap-3 shadow-xl">
+        <div className="p-4 rounded-2xl bg-gradient-to-r from-rose-100 to-white dark:from-rose-950/80 dark:to-slate-900 border border-rose-300 dark:border-rose-800/60 flex items-center justify-between flex-wrap gap-3 shadow-md">
           <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-lg bg-rose-500/20 text-rose-400 border border-rose-500/30 animate-civic-pulse">
+            <div className="p-2.5 rounded-xl bg-rose-200 dark:bg-rose-500/20 text-rose-700 dark:text-rose-400 border border-rose-300 dark:border-rose-500/30 animate-civic-pulse">
               <ShieldAlert className="w-6 h-6" />
             </div>
             <div>
-              <div className="text-sm font-bold text-white flex items-center gap-2">
+              <div className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
                 <span>{criticalCases.length} Critical Grievances Require Immediate Authority Intervention</span>
               </div>
-              <p className="text-xs text-rose-200/80 mt-0.5">
+              <p className="text-xs text-rose-800/80 dark:text-rose-200/80 mt-0.5">
                 Urgent hazards reported by citizens affecting public safety or primary drinking water/electricity.
               </p>
             </div>
           </div>
           <button
             onClick={() => navigate('/complaints?priority=CRITICAL')}
-            className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-rose-200 bg-rose-900/60 hover:bg-rose-850 border border-rose-700/60 rounded-lg transition-colors"
+            className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-rose-900 dark:text-rose-200 bg-rose-200/80 dark:bg-rose-900/60 hover:bg-rose-300 dark:hover:bg-rose-850 border border-rose-300 dark:border-rose-700/60 rounded-lg transition-colors"
           >
             Triage Critical Cases →
           </button>
@@ -151,13 +151,13 @@ export const OverviewPage: React.FC = () => {
       {/* Analytics Visualizations Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Category Breakdown */}
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/90 p-5 shadow-xl">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-5 shadow-sm dark:shadow-xl transition-colors">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
             <div>
-              <h3 className="text-sm font-bold text-white">Grievances by Category</h3>
-              <p className="text-[11px] text-slate-400">Roads, Water, Electricity, Sanitation</p>
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white">Grievances by Category</h3>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">Roads, Water, Electricity, Sanitation</p>
             </div>
-            <Layers className="w-4 h-4 text-civic-400" />
+            <Layers className="w-4 h-4 text-civic-600 dark:text-civic-400" />
           </div>
           <div className="pt-2">
             <CategoryDistributionChart data={categoryStats} />
@@ -165,13 +165,13 @@ export const OverviewPage: React.FC = () => {
         </div>
 
         {/* Status Distribution Donut */}
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/90 p-5 shadow-xl">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-5 shadow-sm dark:shadow-xl transition-colors">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
             <div>
-              <h3 className="text-sm font-bold text-white">Status Breakdown</h3>
-              <p className="text-[11px] text-slate-400">Current lifecycle distribution</p>
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white">Status Breakdown</h3>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">Current lifecycle distribution</p>
             </div>
-            <Clock className="w-4 h-4 text-amber-400" />
+            <Clock className="w-4 h-4 text-amber-500 dark:text-amber-400" />
           </div>
           <div className="pt-2">
             <StatusPieChart data={statusStats} />
@@ -179,13 +179,13 @@ export const OverviewPage: React.FC = () => {
         </div>
 
         {/* Weekly Resolution Velocity */}
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/90 p-5 shadow-xl">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-5 shadow-sm dark:shadow-xl transition-colors">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
             <div>
-              <h3 className="text-sm font-bold text-white">Resolution Trend</h3>
-              <p className="text-[11px] text-slate-400">Reported vs Remediation speed</p>
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white">Resolution Trend</h3>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">Reported vs Remediation speed</p>
             </div>
-            <TrendingUp className="w-4 h-4 text-emerald-400" />
+            <TrendingUp className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
           </div>
           <div className="pt-2">
             <ResolutionTrendChart complaints={complaints} />
@@ -197,14 +197,14 @@ export const OverviewPage: React.FC = () => {
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-lg font-bold text-white">Recent Grievance Submissions</h2>
-            <p className="text-xs text-slate-400">
+            <h2 className="text-lg font-bold text-slate-900 dark:text-white">Recent Grievance Submissions</h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               Live submissions incoming from FlutterFlow Citizen Mobile Application
             </p>
           </div>
           <button
             onClick={() => navigate('/complaints')}
-            className="text-xs font-semibold text-civic-400 hover:text-civic-300 flex items-center gap-1"
+            className="text-xs font-bold text-civic-700 dark:text-civic-400 hover:text-civic-600 dark:hover:text-civic-300 flex items-center gap-1"
           >
             <span>View All Records</span>
             <ArrowRight className="w-3.5 h-3.5" />

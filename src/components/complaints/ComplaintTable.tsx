@@ -14,7 +14,6 @@ import {
   CheckCircle,
   Clock,
   ArrowUpDown,
-  ExternalLink,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -75,17 +74,17 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
   };
 
   return (
-    <div className="rounded-xl border border-slate-800 bg-slate-900 shadow-xl overflow-hidden">
+    <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm dark:shadow-xl overflow-hidden transition-colors">
       <div className="overflow-x-auto">
-        <table className="w-full text-left text-sm text-slate-200">
-          <thead className="bg-slate-950/80 text-[11px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800">
+        <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
+          <thead className="bg-slate-50 dark:bg-slate-950/80 text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">
             <tr>
               <th className="py-3.5 px-4 font-semibold">Grievance ID</th>
               <th className="py-3.5 px-4 font-semibold">Title & Description</th>
               <th className="py-3.5 px-4 font-semibold">Category</th>
               <th
                 onClick={() => toggleSort('priority')}
-                className="py-3.5 px-4 font-semibold cursor-pointer hover:text-white transition-colors"
+                className="py-3.5 px-4 font-semibold cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors"
               >
                 <div className="flex items-center gap-1">
                   <span>Priority</span>
@@ -94,7 +93,7 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
               </th>
               <th
                 onClick={() => toggleSort('status')}
-                className="py-3.5 px-4 font-semibold cursor-pointer hover:text-white transition-colors"
+                className="py-3.5 px-4 font-semibold cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors"
               >
                 <div className="flex items-center gap-1">
                   <span>Status</span>
@@ -106,7 +105,7 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
               <th className="py-3.5 px-4 font-semibold">Assigned Worker</th>
               <th
                 onClick={() => toggleSort('date')}
-                className="py-3.5 px-4 font-semibold cursor-pointer hover:text-white transition-colors"
+                className="py-3.5 px-4 font-semibold cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors"
               >
                 <div className="flex items-center gap-1">
                   <span>Reported</span>
@@ -117,7 +116,7 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
             </tr>
           </thead>
 
-          <tbody className="divide-y divide-slate-800/60">
+          <tbody className="divide-y divide-slate-200/80 dark:divide-slate-800/60">
             {paginatedComplaints.map((item) => {
               const id = item.complaintId || item.id;
               const isCritical = (item.priority || '').toUpperCase() === 'CRITICAL';
@@ -127,17 +126,19 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
                 <tr
                   key={item.id}
                   onClick={() => navigate(`/complaints/${item.id}`)}
-                  className={`cursor-pointer transition-colors hover:bg-slate-800/60 group ${
-                    isCritical && !isResolved ? 'bg-rose-950/10 hover:bg-rose-950/25' : ''
+                  className={`cursor-pointer transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60 group ${
+                    isCritical && !isResolved
+                      ? 'bg-rose-50/60 dark:bg-rose-950/10 hover:bg-rose-100/60 dark:hover:bg-rose-950/25'
+                      : ''
                   }`}
                 >
                   {/* Complaint ID */}
-                  <td className="py-3.5 px-4 font-mono text-xs font-semibold text-civic-400 group-hover:text-civic-300">
+                  <td className="py-3.5 px-4 font-mono text-xs font-bold text-civic-700 dark:text-civic-400 group-hover:text-civic-600 dark:group-hover:text-civic-300">
                     <div className="flex items-center gap-1.5">
                       <span>{id}</span>
                       {item.citizenVerified && (
                         <span title="Citizen Verified">
-                          <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
+                          <CheckCircle className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                         </span>
                       )}
                     </div>
@@ -145,11 +146,11 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
 
                   {/* Title & Description */}
                   <td className="py-3.5 px-4 max-w-xs">
-                    <div className="font-semibold text-white truncate group-hover:text-civic-300 transition-colors">
+                    <div className="font-semibold text-slate-900 dark:text-white truncate group-hover:text-civic-700 dark:group-hover:text-civic-300 transition-colors">
                       {item.title}
                     </div>
                     {item.description && (
-                      <p className="text-xs text-slate-400 line-clamp-1 mt-0.5">
+                      <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
                         {item.description}
                       </p>
                     )}
@@ -171,16 +172,16 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
                   </td>
 
                   {/* Village / Ward */}
-                  <td className="py-3.5 px-4 whitespace-nowrap text-xs text-slate-300">
+                  <td className="py-3.5 px-4 whitespace-nowrap text-xs text-slate-700 dark:text-slate-300">
                     <div className="flex items-center gap-1">
                       <MapPin className="w-3.5 h-3.5 text-slate-400" />
-                      <span className="font-medium text-white">{item.village}</span>
+                      <span className="font-medium text-slate-900 dark:text-white">{item.village}</span>
                     </div>
-                    <div className="text-[11px] text-slate-400 pl-4.5">{item.ward}</div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 pl-4.5">{item.ward}</div>
                   </td>
 
                   {/* Reported By */}
-                  <td className="py-3.5 px-4 whitespace-nowrap text-xs text-slate-300">
+                  <td className="py-3.5 px-4 whitespace-nowrap text-xs text-slate-700 dark:text-slate-300">
                     <div className="flex items-center gap-1">
                       <User className="w-3.5 h-3.5 text-slate-400" />
                       <span>{item.reportedBy || 'Anonymous'}</span>
@@ -190,19 +191,19 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
                   {/* Assigned Worker */}
                   <td className="py-3.5 px-4 whitespace-nowrap text-xs">
                     {item.assignedWorker ? (
-                      <div className="flex items-center gap-1.5 text-blue-300">
-                        <UserCheck className="w-3.5 h-3.5 text-blue-400" />
-                        <span className="font-medium">{item.assignedWorker}</span>
+                      <div className="flex items-center gap-1.5 text-blue-700 dark:text-blue-300 font-semibold">
+                        <UserCheck className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                        <span>{item.assignedWorker}</span>
                       </div>
                     ) : (
-                      <span className="text-slate-500 italic text-[11px]">Unassigned</span>
+                      <span className="text-slate-400 dark:text-slate-500 italic text-[11px]">Unassigned</span>
                     )}
                   </td>
 
                   {/* Created At */}
-                  <td className="py-3.5 px-4 whitespace-nowrap text-xs text-slate-400">
+                  <td className="py-3.5 px-4 whitespace-nowrap text-xs text-slate-500 dark:text-slate-400">
                     <div className="font-mono text-[11px]">{formatTimeAgo(item.createdAt)}</div>
-                    <div className="text-[10px] text-slate-500">
+                    <div className="text-[10px] text-slate-400 dark:text-slate-500">
                       {formatDate(item.createdAt, 'dd MMM, HH:mm')}
                     </div>
                   </td>
@@ -215,7 +216,7 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
                     <div className="flex items-center justify-end gap-1.5">
                       <button
                         onClick={() => navigate(`/complaints/${item.id}`)}
-                        className="p-1.5 text-slate-400 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
+                        className="p-1.5 text-slate-400 hover:text-slate-800 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
                         title="View Full Grievance Dossier"
                       >
                         <Eye className="w-4 h-4" />
@@ -230,18 +231,18 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
       </div>
 
       {/* Pagination Footer */}
-      <div className="flex items-center justify-between px-6 py-4 border-t border-slate-800 bg-slate-950/60 text-xs text-slate-400">
+      <div className="flex items-center justify-between px-6 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 text-xs text-slate-500 dark:text-slate-400">
         <div className="flex items-center gap-2">
           <span>Showing</span>
-          <span className="font-mono font-semibold text-white">
+          <span className="font-mono font-semibold text-slate-900 dark:text-white">
             {complaints.length > 0 ? (currentPage - 1) * pageSize + 1 : 0}
           </span>
           <span>to</span>
-          <span className="font-mono font-semibold text-white">
+          <span className="font-mono font-semibold text-slate-900 dark:text-white">
             {Math.min(currentPage * pageSize, complaints.length)}
           </span>
           <span>of</span>
-          <span className="font-mono font-semibold text-white">{complaints.length}</span>
+          <span className="font-mono font-semibold text-slate-900 dark:text-white">{complaints.length}</span>
           <span>grievances</span>
         </div>
 
@@ -254,7 +255,7 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
                 setPageSize(Number(e.target.value));
                 setCurrentPage(1);
               }}
-              className="bg-slate-900 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200"
+              className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-800 rounded px-2 py-1 text-xs text-slate-800 dark:text-slate-200"
             >
               <option value={10}>10</option>
               <option value={20}>20</option>
@@ -266,17 +267,17 @@ export const ComplaintTable: React.FC<ComplaintTableProps> = ({
             <button
               disabled={currentPage <= 1}
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              className="p-1.5 rounded-lg border border-slate-800 bg-slate-900 text-slate-300 hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="p-1.5 rounded-lg border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
-            <span className="px-2 font-mono font-medium text-white">
+            <span className="px-2 font-mono font-medium text-slate-900 dark:text-white">
               {currentPage} / {totalPages}
             </span>
             <button
               disabled={currentPage >= totalPages}
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-              className="p-1.5 rounded-lg border border-slate-800 bg-slate-900 text-slate-300 hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="p-1.5 rounded-lg border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
               <ChevronRight className="w-4 h-4" />
             </button>
