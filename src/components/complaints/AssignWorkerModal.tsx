@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from '../common/Modal';
 import { Complaint } from '../../types/complaint';
-import { UserCheck, Calendar, FileText, CheckCircle2, User } from 'lucide-react';
+import { UserCheck, Calendar, FileText, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 
 interface AssignWorkerModalProps {
@@ -65,20 +65,20 @@ export const AssignWorkerModal: React.FC<AssignWorkerModalProps> = ({
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Complaint Summary */}
-        <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800">
-          <div className="text-xs font-semibold text-civic-400 uppercase tracking-wider">
+        <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800">
+          <div className="text-xs font-bold text-civic-700 dark:text-civic-400 uppercase tracking-wider">
             {complaint.complaintId || complaint.id} • {complaint.category}
           </div>
-          <div className="text-sm font-bold text-white mt-1">{complaint.title}</div>
-          <div className="text-xs text-slate-400 mt-0.5">
+          <div className="text-sm font-bold text-slate-900 dark:text-white mt-1">{complaint.title}</div>
+          <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
             Location: {complaint.village}, {complaint.ward}
           </div>
         </div>
 
         {/* Worker Selection */}
         <div>
-          <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-            <UserCheck className="w-3.5 h-3.5 text-blue-400" />
+          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <UserCheck className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
             <span>Select Field Worker</span>
           </label>
 
@@ -91,22 +91,22 @@ export const AssignWorkerModal: React.FC<AssignWorkerModalProps> = ({
                     <div
                       key={w.name}
                       onClick={() => setSelectedWorker(w.name)}
-                      className={`p-3 rounded-lg border cursor-pointer transition-all flex items-center justify-between ${
+                      className={`p-3 rounded-xl border cursor-pointer transition-all flex items-center justify-between ${
                         isSelected
-                          ? 'border-blue-500 bg-blue-950/40 text-white shadow-sm'
-                          : 'border-slate-800 bg-slate-950/40 text-slate-300 hover:border-slate-700 hover:bg-slate-800/40'
+                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/40 text-slate-900 dark:text-white shadow-sm ring-1 ring-blue-500'
+                          : 'border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/40 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800/40'
                       }`}
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-xs">
+                        <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-400 flex items-center justify-center font-bold text-xs">
                           {w.name.charAt(0)}
                         </div>
                         <div>
-                          <div className="text-xs font-bold text-white">{w.name}</div>
-                          <div className="text-[11px] text-slate-400">{w.role}</div>
+                          <div className="text-xs font-bold text-slate-900 dark:text-white">{w.name}</div>
+                          <div className="text-[11px] text-slate-500 dark:text-slate-400">{w.role}</div>
                         </div>
                       </div>
-                      {isSelected && <CheckCircle2 className="w-4 h-4 text-blue-400" />}
+                      {isSelected && <CheckCircle2 className="w-4 h-4 text-blue-600 dark:text-blue-400" />}
                     </div>
                   );
                 })}
@@ -115,7 +115,7 @@ export const AssignWorkerModal: React.FC<AssignWorkerModalProps> = ({
               <button
                 type="button"
                 onClick={() => setIsCustom(true)}
-                className="text-xs text-civic-400 hover:text-civic-300 underline mt-1"
+                className="text-xs text-civic-700 dark:text-civic-400 hover:text-civic-600 dark:hover:text-civic-300 underline font-semibold mt-1"
               >
                 + Enter custom worker name
               </button>
@@ -127,12 +127,12 @@ export const AssignWorkerModal: React.FC<AssignWorkerModalProps> = ({
                 value={customWorker}
                 onChange={(e) => setCustomWorker(e.target.value)}
                 placeholder="Enter field worker full name..."
-                className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-blue-500"
+                className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-blue-500"
               />
               <button
                 type="button"
                 onClick={() => setIsCustom(false)}
-                className="text-xs text-slate-400 hover:text-slate-300 underline mt-1.5"
+                className="text-xs text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 underline mt-1.5 font-semibold"
               >
                 ← Back to standard roster
               </button>
@@ -142,22 +142,22 @@ export const AssignWorkerModal: React.FC<AssignWorkerModalProps> = ({
 
         {/* Target Deadline */}
         <div>
-          <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-            <Calendar className="w-3.5 h-3.5 text-purple-400" />
+          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <Calendar className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
             <span>Target Resolution SLA Deadline</span>
           </label>
           <input
             type="date"
             value={deadline}
             onChange={(e) => setDeadline(e.target.value)}
-            className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-civic-500"
+            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-civic-500"
           />
         </div>
 
         {/* Instructions / Notes */}
         <div>
-          <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-            <FileText className="w-3.5 h-3.5 text-amber-400" />
+          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <FileText className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
             <span>Special Instructions / Assignment Notes</span>
           </label>
           <textarea
@@ -165,24 +165,24 @@ export const AssignWorkerModal: React.FC<AssignWorkerModalProps> = ({
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="e.g. Inspect site immediately, contact ward member on arrival..."
-            className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-civic-500"
+            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-civic-500"
           />
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-800">
+        <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
           <button
             type="button"
             onClick={onClose}
             disabled={submitting}
-            className="px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors"
+            className="px-4 py-2 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           >
             Cancel
           </button>
           <button
             type="submit"
             disabled={submitting}
-            className="flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors shadow-lg shadow-blue-950 disabled:opacity-50"
+            className="flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors shadow-md disabled:opacity-50"
           >
             {submitting ? 'Assigning...' : 'Confirm Assignment'}
           </button>

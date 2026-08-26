@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from '../common/Modal';
 import { Complaint, ComplaintStatus } from '../../types/complaint';
-import { CheckCircle, AlertTriangle, Clock, RefreshCw, FileText, Image as ImageIcon } from 'lucide-react';
+import { CheckCircle, FileText } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 
 interface UpdateStatusModalProps {
@@ -31,31 +31,31 @@ export const UpdateStatusModal: React.FC<UpdateStatusModalProps> = ({
       value: 'Under Review',
       label: 'Under Review',
       desc: 'Panchayat officials are verifying complaint authenticity and requirements.',
-      color: 'border-indigo-500/40 text-indigo-300 hover:bg-indigo-950/30',
+      color: 'border-indigo-200 dark:border-indigo-500/40 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/30',
     },
     {
       value: 'In Progress',
       label: 'In Progress',
       desc: 'Field repair / remedial civic work is actively underway on ground.',
-      color: 'border-cyan-500/40 text-cyan-300 hover:bg-cyan-950/30',
+      color: 'border-cyan-200 dark:border-cyan-500/40 text-cyan-700 dark:text-cyan-300 hover:bg-cyan-50 dark:hover:bg-cyan-950/30',
     },
     {
       value: 'Resolved',
       label: 'Resolved',
       desc: 'Issue has been fully remedied. Ready for citizen verification.',
-      color: 'border-emerald-500/40 text-emerald-300 hover:bg-emerald-950/30',
+      color: 'border-emerald-200 dark:border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/30',
     },
     {
       value: 'Rejected',
       label: 'Rejected',
       desc: 'Duplicate, out of jurisdiction, or invalid grievance filing.',
-      color: 'border-rose-500/40 text-rose-300 hover:bg-rose-950/30',
+      color: 'border-rose-200 dark:border-rose-500/40 text-rose-700 dark:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/30',
     },
     {
       value: 'Pending',
       label: 'Pending',
       desc: 'Reset back to queue awaiting review.',
-      color: 'border-amber-500/40 text-amber-300 hover:bg-amber-950/30',
+      color: 'border-amber-200 dark:border-amber-500/40 text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/30',
     },
   ];
 
@@ -86,7 +86,7 @@ export const UpdateStatusModal: React.FC<UpdateStatusModalProps> = ({
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Status Selection Cards */}
         <div className="space-y-2">
-          <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1">
             Choose Target Status
           </label>
           <div className="grid grid-cols-1 gap-2">
@@ -98,15 +98,15 @@ export const UpdateStatusModal: React.FC<UpdateStatusModalProps> = ({
                   onClick={() => setSelectedStatus(st.value)}
                   className={`p-3 rounded-xl border cursor-pointer transition-all ${
                     isSelected
-                      ? 'border-civic-500 bg-civic-950/60 ring-1 ring-civic-500 shadow-md'
-                      : `border-slate-800 bg-slate-950/40 ${st.color}`
+                      ? 'border-emerald-600 bg-emerald-50 dark:bg-civic-950/60 ring-1 ring-emerald-500 shadow-sm'
+                      : `bg-slate-50/50 dark:bg-slate-950/40 ${st.color}`
                   }`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold uppercase tracking-wider">{st.label}</span>
-                    {isSelected && <CheckCircle className="w-4 h-4 text-civic-400" />}
+                    {isSelected && <CheckCircle className="w-4 h-4 text-emerald-600 dark:text-civic-400" />}
                   </div>
-                  <p className="text-[11px] text-slate-400 mt-1">{st.desc}</p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">{st.desc}</p>
                 </div>
               );
             })}
@@ -115,8 +115,8 @@ export const UpdateStatusModal: React.FC<UpdateStatusModalProps> = ({
 
         {/* Audit Remarks */}
         <div>
-          <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-            <FileText className="w-3.5 h-3.5 text-civic-400" />
+          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+            <FileText className="w-3.5 h-3.5 text-civic-600 dark:text-civic-400" />
             <span>Official Officer Remarks (Appears in Citizen Timeline)</span>
           </label>
           <textarea
@@ -124,24 +124,24 @@ export const UpdateStatusModal: React.FC<UpdateStatusModalProps> = ({
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="e.g. Repair crew deployed to primary school road, materials dispatched..."
-            className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-civic-500"
+            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-civic-500"
           />
         </div>
 
         {/* Submit */}
-        <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-800">
+        <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
           <button
             type="button"
             onClick={onClose}
             disabled={submitting}
-            className="px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white bg-slate-800 rounded-lg transition-colors"
+            className="px-4 py-2 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-800 rounded-lg transition-colors"
           >
             Cancel
           </button>
           <button
             type="submit"
             disabled={submitting}
-            className="flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-civic-600 hover:bg-civic-500 rounded-lg transition-colors shadow-lg shadow-civic-950 disabled:opacity-50"
+            className="flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-civic-700 dark:bg-civic-600 hover:bg-civic-600 dark:hover:bg-civic-500 rounded-lg transition-colors shadow-md disabled:opacity-50"
           >
             {submitting ? 'Updating...' : 'Update & Sync to Citizen App'}
           </button>

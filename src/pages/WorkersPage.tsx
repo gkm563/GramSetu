@@ -1,6 +1,6 @@
 import React from 'react';
 import { useComplaints } from '../hooks/useComplaints';
-import { UserCheck, Phone, MapPin, Briefcase, CheckCircle2, AlertCircle, Wrench } from 'lucide-react';
+import { Phone, MapPin, Briefcase } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export const WorkersPage: React.FC = () => {
@@ -72,19 +72,19 @@ export const WorkersPage: React.FC = () => {
   });
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="space-y-6 animate-fade-in pb-12">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-800">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl font-extrabold tracking-tight text-white">
+            <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               Field Workforce & Assignment Roster
             </h1>
-            <span className="px-2.5 py-0.5 rounded-full bg-blue-950/80 border border-blue-800 text-xs font-mono font-bold text-blue-400">
+            <span className="px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/80 border border-blue-300 dark:border-blue-800 text-xs font-mono font-bold text-blue-800 dark:text-blue-400">
               {WORKERS.length} Active Personnel
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
             Dispatch, monitor workload distribution, and track SLA performance of panchayat field staff.
           </p>
         </div>
@@ -97,25 +97,25 @@ export const WorkersPage: React.FC = () => {
           return (
             <div
               key={worker.id}
-              className="rounded-2xl border border-slate-800 bg-slate-900/90 p-5 shadow-xl space-y-4 hover:border-slate-700 transition-all"
+              className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-5 shadow-sm dark:shadow-xl space-y-4 hover:border-slate-300 dark:hover:border-slate-700 transition-all"
             >
               {/* Top Row */}
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white flex items-center justify-center font-bold text-base shadow-md">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-600 to-blue-500 text-white flex items-center justify-center font-bold text-base shadow-md">
                     {worker.name.charAt(0)}
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-white">{worker.name}</h3>
-                    <p className="text-xs text-slate-400">{worker.role}</p>
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-white">{worker.name}</h3>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">{worker.role}</p>
                   </div>
                 </div>
 
                 <span
                   className={`px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded border ${
                     isBusy
-                      ? 'bg-amber-950/60 text-amber-400 border-amber-800/60'
-                      : 'bg-emerald-950/60 text-emerald-400 border-emerald-800/60'
+                      ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-400 border-amber-300 dark:border-amber-800/60'
+                      : 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-400 border-emerald-300 dark:border-emerald-800/60'
                   }`}
                 >
                   {isBusy ? 'Heavy Load' : 'Available'}
@@ -123,36 +123,36 @@ export const WorkersPage: React.FC = () => {
               </div>
 
               {/* Department & Contact */}
-              <div className="space-y-1.5 text-xs text-slate-300 pt-2 border-t border-slate-800">
+              <div className="space-y-1.5 text-xs text-slate-700 dark:text-slate-300 pt-2 border-t border-slate-200 dark:border-slate-800">
                 <div className="flex items-center gap-2">
-                  <Briefcase className="w-3.5 h-3.5 text-slate-500" />
-                  <span className="text-slate-400">{worker.department}</span>
+                  <Briefcase className="w-3.5 h-3.5 text-slate-400" />
+                  <span className="text-slate-600 dark:text-slate-400">{worker.department}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="w-3.5 h-3.5 text-slate-500" />
-                  <span className="font-mono text-slate-300">{worker.phone}</span>
+                  <Phone className="w-3.5 h-3.5 text-slate-400" />
+                  <span className="font-mono text-slate-800 dark:text-slate-300">{worker.phone}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-slate-500" />
-                  <span className="text-slate-400">{worker.village}</span>
+                  <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                  <span className="text-slate-600 dark:text-slate-400">{worker.village}</span>
                 </div>
               </div>
 
               {/* Workload Stats */}
-              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
-                <div className="p-2.5 rounded-lg bg-slate-950 text-center">
-                  <div className="text-[10px] font-semibold text-slate-400 uppercase">
+              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+                <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 text-center">
+                  <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase">
                     Active Tasks
                   </div>
-                  <div className="text-lg font-bold font-mono text-cyan-400">
+                  <div className="text-lg font-extrabold font-mono text-cyan-700 dark:text-cyan-400">
                     {worker.activeTasks}
                   </div>
                 </div>
-                <div className="p-2.5 rounded-lg bg-slate-950 text-center">
-                  <div className="text-[10px] font-semibold text-slate-400 uppercase">
+                <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 text-center">
+                  <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase">
                     Resolved
                   </div>
-                  <div className="text-lg font-bold font-mono text-emerald-400">
+                  <div className="text-lg font-extrabold font-mono text-emerald-700 dark:text-emerald-400">
                     {worker.resolvedTasks}
                   </div>
                 </div>
@@ -161,9 +161,9 @@ export const WorkersPage: React.FC = () => {
               {/* Action Button */}
               <button
                 onClick={() => navigate(`/complaints?search=${encodeURIComponent(worker.name)}`)}
-                className="w-full py-2 px-3 text-xs font-bold text-slate-300 bg-slate-800 hover:bg-slate-750 hover:text-white rounded-xl transition-colors text-center"
+                className="w-full py-2 px-3 text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-750 hover:text-slate-900 dark:hover:text-white rounded-xl transition-colors text-center"
               >
-                View Worker's Assigned Cases ({worker.activeTasks})
+                View Assigned Cases ({worker.activeTasks})
               </button>
             </div>
           );

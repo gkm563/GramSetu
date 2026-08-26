@@ -8,12 +8,16 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
+import { useTheme } from '../../hooks/useTheme';
 
 interface ResolutionTrendChartProps {
   complaints: any[];
 }
 
 export const ResolutionTrendChart: React.FC<ResolutionTrendChartProps> = ({ complaints }) => {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
   // Aggregate complaints over the last 7 days or sample days
   const data = React.useMemo(() => {
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -58,15 +62,16 @@ export const ResolutionTrendChart: React.FC<ResolutionTrendChartProps> = ({ comp
               <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
-          <XAxis dataKey="day" stroke="#64748b" tick={{ fill: '#94a3b8', fontSize: 11 }} />
-          <YAxis stroke="#64748b" tick={{ fill: '#94a3b8', fontSize: 11 }} allowDecimals={false} />
+          <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#1e293b' : '#e2e8f0'} />
+          <XAxis dataKey="day" stroke="#94a3b8" tick={{ fill: isDark ? '#94a3b8' : '#475569', fontSize: 11 }} />
+          <YAxis stroke="#94a3b8" tick={{ fill: isDark ? '#94a3b8' : '#475569', fontSize: 11 }} allowDecimals={false} />
           <Tooltip
             contentStyle={{
-              backgroundColor: '#0f172a',
-              borderColor: '#334155',
-              borderRadius: '0.5rem',
-              color: '#f8fafc',
+              backgroundColor: isDark ? '#0f172a' : '#ffffff',
+              borderColor: isDark ? '#334155' : '#cbd5e1',
+              borderRadius: '0.75rem',
+              color: isDark ? '#f8fafc' : '#0f172a',
+              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
               fontSize: '12px',
             }}
           />

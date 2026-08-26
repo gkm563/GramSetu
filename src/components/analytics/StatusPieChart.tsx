@@ -7,15 +7,19 @@ import {
   ResponsiveContainer,
   Legend,
 } from 'recharts';
+import { useTheme } from '../../hooks/useTheme';
 
 interface StatusPieChartProps {
   data: { name: string; count: number; color: string }[];
 }
 
 export const StatusPieChart: React.FC<StatusPieChartProps> = ({ data }) => {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
   if (!data || data.length === 0) {
     return (
-      <div className="h-64 flex items-center justify-center text-xs text-slate-500 italic">
+      <div className="h-64 flex items-center justify-center text-xs text-slate-400 italic">
         No status grievance records available.
       </div>
     );
@@ -35,15 +39,16 @@ export const StatusPieChart: React.FC<StatusPieChartProps> = ({ data }) => {
             dataKey="count"
           >
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={entry.color} stroke="#0f172a" strokeWidth={2} />
+              <Cell key={`cell-${index}`} fill={entry.color} stroke={isDark ? '#0f172a' : '#ffffff'} strokeWidth={2} />
             ))}
           </Pie>
           <Tooltip
             contentStyle={{
-              backgroundColor: '#0f172a',
-              borderColor: '#334155',
-              borderRadius: '0.5rem',
-              color: '#f8fafc',
+              backgroundColor: isDark ? '#0f172a' : '#ffffff',
+              borderColor: isDark ? '#334155' : '#cbd5e1',
+              borderRadius: '0.75rem',
+              color: isDark ? '#f8fafc' : '#0f172a',
+              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
               fontSize: '12px',
             }}
             formatter={(value: any) => [`${value} Grievances`, 'Count']}
@@ -52,7 +57,7 @@ export const StatusPieChart: React.FC<StatusPieChartProps> = ({ data }) => {
             verticalAlign="bottom"
             height={36}
             formatter={(value: string) => (
-              <span className="text-xs text-slate-300 font-medium px-1">{value}</span>
+              <span className={`text-xs font-semibold px-1 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>{value}</span>
             )}
           />
         </PieChart>
