@@ -922,3 +922,7 @@ Daily activity and development milestones tracking.
 - **Activity**: test: add verification checks for form validation
 - **Checkpoint**: `210910`
 
+### Entry: 2026-08-28 22:45:36
+- **Activity**: docs(guide): add multilingual support notes
+- **Checkpoint**: `601817`
+
