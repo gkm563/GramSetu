@@ -970,3 +970,7 @@ Daily activity and development milestones tracking.
 - **Activity**: fix: handle null edge cases in user profile view
 - **Checkpoint**: `927770`
 
+### Entry: 2026-09-04 22:02:36
+- **Activity**: docs: update rural portal onboarding documentation
+- **Checkpoint**: `824696`
+
