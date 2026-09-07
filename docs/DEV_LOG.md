@@ -3998,3 +3998,7 @@ Daily activity and development milestones tracking.
 - **Scope**: `fix(ui): resolve layout shift on multilingual dropdown change`
 - **Ref**: `sync-226313`
 
+### Sprint Update: 2026-09-07 09:50:18
+- **Scope**: `refactor(auth): refine role checks for district nodal officers`
+- **Ref**: `sync-183862`
+
